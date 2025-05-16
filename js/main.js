@@ -6,7 +6,7 @@ const totalHTML = document.querySelector('.total--price');
 const btnGenerate = document.querySelector('.btn');
 
 const commandesTab = [];
-let total = 0
+let total = Number.parseFloat(0).toFixed(2);
 totalHTML.textContent = total;
 
 // === Class Commande ===
@@ -18,7 +18,7 @@ class Commande{
         this.total = price * quantity; 
     }
     returnCommande(){
-        return `${this.quantity}x ${this.name} - Total ${this.total}€`
+        return `${this.quantity}x ${this.name} - Total ${Number.parseFloat(this.total).toFixed(2)}€`
     }
 }
 
@@ -46,7 +46,7 @@ function totalPrice() {
     commandesTab.forEach(commande => {
         total += commande.total;
     })
-    totalHTML.textContent = total;
+    totalHTML.textContent = Number.parseFloat(total).toFixed(2);
 }
 
 
