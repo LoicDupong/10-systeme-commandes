@@ -1,72 +1,42 @@
-# 🚀 Nom du Projet
+# 🧾 Mini-App de Gestion de Commandes
 
-> 🌟 Une courte phrase d'accroche pour présenter ton projet.
+## 📋 Description
+Cette application permet à un utilisateur de saisir des commandes en renseignant :
+- le nom d’un article
+- son prix
+- sa quantité
 
----
+Chaque commande est enregistrée et affichée dynamiquement, avec un total général mis à jour en temps réel.
 
-## 📦 Fonctionnalités
+## 🛠️ Fonctionnalités
+- Ajout de commande avec nom, prix et quantité
+- Affichage de chaque commande ajoutée
+- Calcul automatique du prix total par commande (`prix × quantité`)
+- Mise à jour du total général de toutes les commandes
+- Validation via un bouton avec `addEventListener`
 
-| ✅ Fait | 🔧 En cours | 📝 À faire |
-|--------|-------------|------------|
-| Fonctionnalité 1 |  |  |
-| Fonctionnalité 2 |  |  |
-|  | Fonctionnalité 3 |  |
-|  |  | Fonctionnalité 4 |
+## 🧱 Structure HTML
+- Trois champs input : `nom`, `prix`, `quantité`
+- Un bouton "Ajouter"
+- Un conteneur pour la liste des commandes
+- Un élément affichant le total général
 
----
+## 👨‍💻 Tech utilisé
+- HTML, CSS (basique)
+- JavaScript (ES6+)
+  - Classes JS
+  - Tableaux d’objets
+  - Manipulation DOM
+  - `reduce()` pour le total global
 
-## 🛠️ Installation
+## 🔍 Bonus inclus (si implémentés)
+- Validation des champs vides
+- Suppression de commandes
+- Message si aucune commande
+- Ajout d’horodatage à chaque commande
 
-```bash
-git clone https://github.com/LoicDupong/ton-projet.git
-cd ton-projet
-npm install
-```
+## 🚀 Lancer le projet
+1. Cloner le repo
+2. Ouvrir `index.html` dans un navigateur
 
----
-
-## ▶️ Utilisation
-
-```bash
-npm start
-```
-
----
-
-## ⚙️ Configuration
-
-| Variable          | Description                 | Exemple                |
-|------------------|-----------------------------|------------------------|
-| `API_KEY`         | Clé pour l'API externe      | `123abc456`            |
-| `NODE_ENV`        | Mode d'exécution            | `development` / `prod` |
-
----
-
-## 🧰 Stack Technique
-
-- 🧠 Framework : React / Vue / etc.
-- 🔌 Backend : Node.js / Django / etc.
-- 🗃️ BDD : MongoDB / PostgreSQL
-- 🎨 UI : Tailwind / Bootstrap
-
----
-
-## 🤝 Contribuer
-
-1. 🍴 Fork le repo
-2. 💡 Crée une branche (`git checkout -b feature/xyz`)
-3. 🔨 Commit (`git commit -m 'feat: add xyz'`)
-4. 🚀 Push (`git push origin feature/xyz`)
-5. 📩 Ouvre une Pull Request
-
----
-
-## 📝 Licence
-
-Ce projet est sous licence [MIT](LICENSE).
-
----
-
-## 📬 Contact
-
-Créé avec ❤️ par [@LoicDupong](https://github.com/LoicDupong)
+## 📂 Arborescence
